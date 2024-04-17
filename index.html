@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>WEB II Integrador - Hugo Gabriel Torrez</title>
+</head>
+
+<body>
+    <header>
+        <p class="pMercadoLibre">Mercado Libre</p>
+        <nav>
+            <ul class="ulHeader">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sectionSobreNosotros">Sobre nosotros</a></li>
+                <li><a href="#sectionCatalogo">Catalogo</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sectionCarrousel sectionPortada">
+        <div class="carouselContenedor">
+            <div class="divImgCarrousel">
+                <img id="imagen" src="" alt="Imagen del carrusel">
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionSobreNosotros">
+        <div class="divContenedorSobreNosotros">
+            <div class="fila1">
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/estadoEnvio.svg" alt="logoSeguirEstadoyUbicacion">
+                    <span>Seguimiento online</span>
+                    <p>Podras verificar el estado y la ubicacion de tu compra, con su numero de envio.</p>
+                </div>
+
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/devolucion.svg" alt="logoDevoluciones7dias">
+
+                    <span>Devolucion express </span>
+                    <p>Cuenta con 7 días habiles para realizar una devolucion sin costo de envio.</p>
+                </div>
+
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/compraSegura.svg" alt="logoCompraSegura">
+                    <span>Compra segura</span>
+                    <p>El vendedor podra recibir el pago unicamente si el envio es entregado al titular.</p>
+                </div>
+            </div>
+            <div class="fila2">
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/entregaDomicilio.svg" alt="logoEntregaAdomicilio">
+                    <span>Entrega a domicilio</span>
+                    <p>Un repartidor se comunicara con ud, para coordinar la entrega.</p>
+                </div>
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/puntoDeRetiro.svg" alt="logoPuntoDeRetiro">
+                    <span>Puntos de retiro</span>
+                    <p>Puede seleccionar el mas cercano a su domicilio o el que prefiera por horarios.</p>
+                </div>
+                <div class="divInfo">
+                    <img class="imgInfo" src="./imagenes/descuentos.svg" alt="logoDescuentosYenvioGratisClientes">
+                    <span>Beneficios para clientes</span>
+                    <p>Cuenta con envios gratis y descuentos en productos seleccionados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionCatalogo" class="sectionProductos">
+
+        <div class="contenedorCarrito">
+            <div class="divProductosCarrito"></div>
+            <div class="divBotonesCarrito">
+                <button class="btnConfirmarCompra" type="button">Confirmar compra</button>
+                <button class="btnVaciarCarrito">Vaciar carrito</button>
+            </div>
+        </div>
+
+        <h1> Catalogo de productos</h1>
+
+        <div class="contenedorProductos"></div>
+
+        <div class="divMensajes">
+            <button class="btnMensaje">Aceptar</button>
+        </div>
+
+        <div class="divEfectoDifuminado"></div>
+    </section>
+    <footer class="footer">
+        <p>2024 - Todos los derechos reservados. </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="carroCompras.js"></script>
+    <script src="./carrousel.js"></script>
+
+</body>
+
+</html>
