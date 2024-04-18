@@ -47,6 +47,10 @@
     font-size: 12px;
 }
 
+    .ulHeader{
+        gap: 4px;
+    }
+
     .ulHeader li a{
         font-size: 13px;
     }
