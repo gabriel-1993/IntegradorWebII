@@ -1,0 +1,76 @@
+ /* Media query para pantallas con ancho máximo de 760px */
+ @media (max-width: 900px) {
+
+     .cardProducto {
+         width: 250px;
+     }
+
+
+     .fila1,
+     .fila2 {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .divInfo {
+         height: auto;
+         gap: 5px;
+         width: 75%;
+     }
+
+     .divInfo img{
+        height: 50px;
+     }
+
+     .divInfo p{
+        margin-top: 30px;
+     }
+
+
+ }
+
+ /* Media query para pantallas con ancho máximo de 760px */
+ @media (max-width: 789px) {
+
+   
+    .divInfo {
+      width: 85%;
+    }
+
+
+ }
+
+  /* Media query para pantallas con ancho máximo de 760px */
+  @media (max-width: 520px) {
+
+.pMercadoLibre{
+    font-size: 12px;
+}
+
+    .ulHeader li a{
+        font-size: 13px;
+    }
+
+    .divInfo {
+        gap: 0px;
+        width: 90%;
+    }
+
+    .divInfo span{
+        font-size: 12px;
+    }
+
+    .divInfo p{
+        font-size: 10px;
+    }
+
+    .divInfo img{
+       height: 30px;
+    }
+   
+.sectionProductos h1{
+    font-size: 15px;
+}
+
+
+}

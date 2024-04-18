@@ -74,9 +74,7 @@ app.listen(port, () => {
 
 const fs = require('fs');
 const port2 = 3002;
-
 app.use(express.json());
-
 // Ruta para recibir datos de compras desde el cliente y guardarlos en un archivo
 app.post('/compras', (req, res) => {
     const nuevaCompra = req.body; // Obtener los datos enviados desde el cliente
@@ -102,7 +100,6 @@ app.post('/compras', (req, res) => {
 
     // Guardar las compras actualizadas en el archivo JSON
     guardarDatosEnArchivo(comprasAnteriores, nombreArchivo);
-
     res.send('Datos de compras recibidos y guardados correctamente en el servidor.');
 });
 

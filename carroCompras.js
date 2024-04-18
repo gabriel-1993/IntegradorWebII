@@ -355,27 +355,21 @@ document.addEventListener('DOMContentLoaded', async function () {
 // GUARDAR COMPRAS
 document.addEventListener('DOMContentLoaded', () => {
     const btnConfirmarCompra = document.querySelector('.btnConfirmarCompra');
-
     if (btnConfirmarCompra) {
         btnConfirmarCompra.addEventListener('click', async (event) => {
             event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
-
             // Capturar el valor total de la compra desde el elemento HTML
             const pTotal = document.querySelector('.pTotalCarrito');
             let compraTotal = pTotal.innerText;
-
             // Crear un objeto de compra con la fecha y el total
             const compra = {
                 date: new Date(), // Fecha y hora actual
                 total: compraTotal // Total de la compra
             };
-
             // Obtener datos del localStorage
             const datosLocalStorage = JSON.parse(localStorage.getItem('carrito'));
-
             // Combinar los datos del localStorage con los datos de fecha
             Object.assign(compra, datosLocalStorage);
-
             // Enviar datos al servidor
             try {
                 const response = await fetch('http://localhost:3002/compras', {

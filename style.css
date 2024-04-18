@@ -121,7 +121,8 @@ header {
 }
 
 .divContenedorSobreNosotros {
-    width: 70%;
+    max-width: 750px; /* Establecer el ancho máximo inicial */
+    width: 100%; /* Ancho por defecto (90% de ancho disponible) */
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -212,8 +213,8 @@ h1 {
 
 /* Div contenedor de productos */
 .contenedorProductos {
-    width: 80%;
-    display: flex;
+    max-width: 750px; /* Establecer el ancho máximo inicial */
+    width: 100%; /* Ancho por defecto (90% de ancho disponible) */    display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
