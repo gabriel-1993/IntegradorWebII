@@ -30,6 +30,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--amarillo);
+    z-index: 2;
+
 }
 
 .pMercadoLibre {
@@ -76,7 +78,6 @@ header {
 /* section portada(carrousel) */
 
 .sectionCarrousel {
-   
     width: 100%;
     max-width: 1350px;
     padding: 0;
