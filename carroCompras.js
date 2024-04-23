@@ -210,11 +210,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Si el carrito está vacío, mostrar un mensaje
             if (carrito.length === 0) {
                 const pCarroVacio = document.createElement('p');
-                pCarroVacio.style.color = "green";
+                pCarroVacio.style.color = "#1a1a46";
                 pCarroVacio.style.textAlign="center";
                 pCarroVacio.style.fontWeight = "600";
-                pCarroVacio.style.marginTop="50px";
-                pCarroVacio.innerHTML = "Carrito de compras vacío.";
+                pCarroVacio.style.marginTop="20px";
+                pCarroVacio.innerHTML = "Carrito de compras vacío =)";
                 divProductosCarrito.appendChild(pCarroVacio);
                 divBotonesCarrito.classList.remove('mostrarBtnsCarrito');
 

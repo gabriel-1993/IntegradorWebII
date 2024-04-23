@@ -14,7 +14,7 @@
     --gris-claro: #e9e4e4;
     --blanco-oscurecido: #F5F5F5;
     --verde: #83B073;
-    --azul: rgb(26, 26, 70);
+    --azul: #1a1a46;
 }
 
 
@@ -456,6 +456,7 @@ h1 {
 .visible {
     display: block;
 }
+
 
 
 
